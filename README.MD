@@ -40,8 +40,8 @@ Returns the result of the fastest completing task.
 
 ```gdscript
 var results = await Awaiter.race([
-    task_function.bind("good morning", 1.0),
-    task_function.bind("good night", 0.3),
+    task_function.bind("good morning", 0.1),
+    task_function.bind("good night", 5.0),
 ])
 print(results) # "good morning"
 ```
